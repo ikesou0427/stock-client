@@ -5,7 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const entry = path.resolve(__dirname, 'index.tsx');
+const entry = path.resolve(__dirname, 'src', 'index.tsx');
 
 const config: webpack.Configuration = {
   mode: isProduction ? 'production' : 'development',
